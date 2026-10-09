@@ -1,9 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>My Developer Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Tài Liệu Chia Sẻ - nhphuoc65</title>
+    <!-- Nhúng giao diện đẹp mắt từ Bootstrap -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .folder-container { max-width: 700px; margin-top: 50px; }
+        .list-group-item:hover { background-color: #f1f3f5; }
+    </style>
 </head>
 <body>
-    <h1>Chào mừng đến với trang web của Nguyễn Hồng Phước</h1>
+
+<div class="container folder-container">
+    <div class="card shadow">
+        <!-- Tiêu đề trang -->
+        <div class="card-header bg-primary text-white d-flex align-items-center">
+            <span class="fs-4 me-2">📁</span>
+            <h1 class="h4 mb-0">Thư mục chia sẻ công khai</h1>
+        </div>
+        
+        <!-- Danh sách các file trong thư mục -->
+        <div class="card-body">
+            <p class="text-muted small">Bấm vào bất kỳ tệp tin nào bên dưới để xem trực tuyến hoặc tải về:</p>
+            <div class="list-group">
+                
+                <!-- FILE 1: Ví dụ tệp PDF (Bạn hãy sửa lại "ten-thu-muc" và "file1.pdf" theo đúng file của bạn) -->
+                <a href="ten-thu-muc/file1.pdf" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="me-2 text-danger">📄</span> 
+                        <strong>Tài liệu hướng dẫn (PDF)</strong>
+                    </div>
+                    <span class="badge bg-secondary rounded-pill">Xem/Tải</span>
+                </a>
+
+                <!-- FILE 2: Ví dụ file ảnh PNG -->
+                <a href="ten-thu-muc/anh-san-pham.png" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="me-2 text-success">🖼️</span> 
+                        <strong>Hình ảnh sản phẩm (PNG)</strong>
+                    </div>
+                    <span class="badge bg-secondary rounded-pill">Xem/Tải</span>
+                </a>
+
+                <!-- FILE 3: Ví dụ file nén ZIP -->
+                <a href="ten-thu-muc/tat-ca-file.zip" download class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="me-2 text-warning">📦</span> 
+                        <strong>Tải về toàn bộ thư mục (ZIP)</strong>
+                    </div>
+                    <span class="badge bg-primary rounded-pill">Tải về (.zip)</span>
+                </a>
+                <!-- FILE 4: Ví dụ file text -->
+                <a href="documents/test.txt" download class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="me-2 text-warning">📦</span> 
+                        <strong>Tải về toàn bộ thư mục (ZIP)</strong>
+                    </div>
+                    <span class="badge bg-primary rounded-pill">Tải về (.zip)</span>
+                </a>
+
+            </div>
+        </div>
+        
+        <!-- Chân trang -->
+        <div class="card-footer text-center text-muted small">
+            © 2026 Powered by nhphuoc65.github.io
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
