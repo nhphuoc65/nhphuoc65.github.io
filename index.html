@@ -3,74 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kho Tài Liệu Chia Sẻ - nhphuoc65</title>
-    <!-- Nhúng giao diện đẹp mắt từ Bootstrap -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
+    <title>NGUYEN HONG PHUOC</title>
     <style>
-        body { background-color: #f8f9fa; }
-        .folder-container { max-width: 700px; margin-top: 50px; }
-        .list-group-item:hover { background-color: #f1f3f5; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #111;
+            padding: 40px 20px;
+        }
+        h1 { margin: 0; color: #ff9800; }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .game-card {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #333;
+        }
+        .game-card h3 { color: #00bcd4; margin-top: 0; }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-<div class="container folder-container">
-    <div class="card shadow">
-        <!-- Tiêu đề trang -->
-        <div class="card-header bg-primary text-white d-flex align-items-center">
-            <span class="fs-4 me-2">📁</span>
-            <h1 class="h4 mb-0">Thư mục chia sẻ công khai</h1>
-        </div>
+    <header>
+        <h1>NGUYEN HONG PHUOC</h1>
+        <p>Android Game Developer</p>
+    </header>
+
+    <div class="container">
+        <h2>Trò chơi của chúng tôi</h2>
         
-        <!-- Danh sách các file trong thư mục -->
-        <div class="card-body">
-            <p class="text-muted small">Bấm vào bất kỳ tệp tin nào bên dưới để xem trực tuyến hoặc tải về:</p>
-            <div class="list-group">
-                
-                <!-- FILE 1: Ví dụ tệp PDF (Bạn hãy sửa lại "ten-thu-muc" và "file1.pdf" theo đúng file của bạn) -->
-                <a href="ten-thu-muc/file1.pdf" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="me-2 text-danger">📄</span> 
-                        <strong>Tài liệu hướng dẫn (PDF)</strong>
-                    </div>
-                    <span class="badge bg-secondary rounded-pill">Xem/Tải</span>
-                </a>
-
-                <!-- FILE 2: Ví dụ file ảnh PNG -->
-                <a href="ten-thu-muc/anh-san-pham.png" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="me-2 text-success">🖼️</span> 
-                        <strong>Hình ảnh sản phẩm (PNG)</strong>
-                    </div>
-                    <span class="badge bg-secondary rounded-pill">Xem/Tải</span>
-                </a>
-
-                <!-- FILE 3: Ví dụ file nén ZIP -->
-                <a href="ten-thu-muc/tat-ca-file.zip" download class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="me-2 text-warning">📦</span> 
-                        <strong>Tải về toàn bộ thư mục (ZIP)</strong>
-                    </div>
-                    <span class="badge bg-primary rounded-pill">Tải về (.zip)</span>
-                </a>
-                <!-- FILE 4: Ví dụ file text -->
-                <a href="documents/test.txt" download class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="me-2 text-warning">📦</span> 
-                        <strong>Tải về file text </strong>
-                    </div>
-                    <span class="badge bg-primary rounded-pill">Tải về (.txt)</span>
-                </a>
-
-            </div>
-        </div>
-        
-        <!-- Chân trang -->
-        <div class="card-footer text-center text-muted small">
-            © 2026 Powered by nhphuoc65.github.io
+        <!-- Khu vực giới thiệu Game Android của bạn -->
+        <div class="game-card">
+            <h3>LoonChaser</h3>
+            <p>Mô tả ngắn gọn về trò chơi hấp dẫn của bạn tại đây.</p>
+            <p>Trạng thái: Đang có mặt trên Google Play</p>
         </div>
     </div>
-</div>
+
+    <!-- PHẦN QUAN TRỌNG NHẤT KHÔNG ĐƯỢC THIẾU -->
+    <footer>
+        <p>&copy; 2026 NGUYEN HONG PHUOC. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Chính sách quyền riêng tư (Privacy Policy)</a> | 
+            <a href="mailto:nh.phuoc65@gmail.com">Liên hệ (Contact)</a>
+        </p>
+    </footer>
 
 </body>
 </html>
